@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="en">
   <head>
     <title>Student Enrollment Form</title>
@@ -13,9 +8,7 @@ and open the template in the editor.
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <!--jQuery library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
     <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
@@ -155,7 +148,7 @@ and open the template in the editor.
           return "";
         }
 
-        var stuEnrollDateVar = $("#stuEnrollDate").val();  // ✅ Correct selector
+        var stuEnrollDateVar = $("#stuEnrollDate").val(); 
 
         if (stuEnrollDateVar === "") {
           alert("Student Enrollment-Date is Required Value");
@@ -255,7 +248,7 @@ and open the template in the editor.
           return;
         }
         var putReqStr = createPUTRequest(
-  "90934323|-31949204905354741|90957338",  // ✅ Correct Token
+  "90934323|-31949204905354741|90957338",  
   jsonStr,
   "SCHOOL-DB",
   "STUDENT-TABLE"
